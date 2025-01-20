@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{52D52455-2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Domain", "CleanArchitecture.Domain\CleanArchitecture.Domain.csproj", "{D616101A-A050-4EB9-BA86-B8101CC9AEC0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Application", "CleanArchitecture.Application\CleanArchitecture.Application.csproj", "{571A62E9-126F-4B8A-AA0C-D228163FF842}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,16 @@ Global
 		{D616101A-A050-4EB9-BA86-B8101CC9AEC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D616101A-A050-4EB9-BA86-B8101CC9AEC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D616101A-A050-4EB9-BA86-B8101CC9AEC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{571A62E9-126F-4B8A-AA0C-D228163FF842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{571A62E9-126F-4B8A-AA0C-D228163FF842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{571A62E9-126F-4B8A-AA0C-D228163FF842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{571A62E9-126F-4B8A-AA0C-D228163FF842}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D616101A-A050-4EB9-BA86-B8101CC9AEC0} = {C0D803E9-5FCF-447C-9A78-63206A4DD3A3}
+		{571A62E9-126F-4B8A-AA0C-D228163FF842} = {C0D803E9-5FCF-447C-9A78-63206A4DD3A3}
 	EndGlobalSection
 EndGlobal
