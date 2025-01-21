@@ -8,7 +8,7 @@ namespace CleanArchitecture.Infrastructure
 {
     public static class InfrastructureServiceRegistrations
     {
-        public static IServiceCollection ConfigureApplicationServices(
+        public static IServiceCollection ConfigureInsfrastructureServices(
             this IServiceCollection services,
             IConfiguration configuration)
         {

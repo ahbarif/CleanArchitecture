@@ -5,7 +5,9 @@ namespace CleanArchitecture.Application
 {
     public static class ApplicationServiceRegistrations
     {
-        public static IServiceCollection ConfigureApplicationServices(this IServiceCollection services)
+        public static IServiceCollection ConfigureApplicationServices(
+            this IServiceCollection services
+            )
         {
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             //services.AddMediatR(typeof(Startup));
@@ -13,5 +15,6 @@ namespace CleanArchitecture.Application
             return services;
         }
     }
+
 }
  

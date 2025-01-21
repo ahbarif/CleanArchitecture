@@ -8,7 +8,7 @@ namespace CleanArchitecture.Persistence
 {
     public static class PersistenceServiceRegistrations
     {
-        public static IServiceCollection ConfigureApplicationServices(
+        public static IServiceCollection ConfigurePersistenceServices(
             this IServiceCollection services, 
             IConfiguration configuration)
         {
