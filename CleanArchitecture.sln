@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C0D803E9-5FCF-447C-9A78-63206A4DD3A3}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Domain", "CleanArchitecture.Domain\CleanArchitecture.Domain.csproj", "{D616101A-A050-4EB9-BA86-B8101CC9AEC0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Application", "CleanArchitecture.Application\CleanArchitecture.Application.csproj", "{571A62E9-126F-4B8A-AA0C-D228163FF842}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Infrastructure", "CleanArchitecture.Infrastructure\CleanArchitecture.Infrastructure.csproj", "{B4A95326-3F7C-4694-8AD9-05BCA8ADBD3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Persistence", "CleanArchitecture.Persistence\CleanArchitecture.Persistence.csproj", "{91A6BDF3-B65B-4A60-A378-0A4708E73640}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,14 @@ Global
 		{571A62E9-126F-4B8A-AA0C-D228163FF842}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{571A62E9-126F-4B8A-AA0C-D228163FF842}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{571A62E9-126F-4B8A-AA0C-D228163FF842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4A95326-3F7C-4694-8AD9-05BCA8ADBD3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4A95326-3F7C-4694-8AD9-05BCA8ADBD3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4A95326-3F7C-4694-8AD9-05BCA8ADBD3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4A95326-3F7C-4694-8AD9-05BCA8ADBD3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91A6BDF3-B65B-4A60-A378-0A4708E73640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A6BDF3-B65B-4A60-A378-0A4708E73640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A6BDF3-B65B-4A60-A378-0A4708E73640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A6BDF3-B65B-4A60-A378-0A4708E73640}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,5 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D616101A-A050-4EB9-BA86-B8101CC9AEC0} = {C0D803E9-5FCF-447C-9A78-63206A4DD3A3}
 		{571A62E9-126F-4B8A-AA0C-D228163FF842} = {C0D803E9-5FCF-447C-9A78-63206A4DD3A3}
+		{B4A95326-3F7C-4694-8AD9-05BCA8ADBD3E} = {C0D803E9-5FCF-447C-9A78-63206A4DD3A3}
+		{91A6BDF3-B65B-4A60-A378-0A4708E73640} = {C0D803E9-5FCF-447C-9A78-63206A4DD3A3}
 	EndGlobalSection
 EndGlobal

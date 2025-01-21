@@ -1,10 +1,12 @@
 ﻿using AutoMapper;
 using CleanArchitecture.Application.DTOs.LeaveRequest.Validators;
 using CleanArchitecture.Application.Features.LeaveRequests.Requests.Commands;
-using CleanArchitecture.Application.Persistence.Contracts;
+using CleanArchitecture.Application.Contracts.Persistence;
 using CleanArchitecture.Application.Responses;
 using CleanArchitecture.Domain.Entities;
 using MediatR;
+using CleanArchitecture.Application.Contracts.Infrastructure;
+using CleanArchitecture.Application.Models;
 
 namespace CleanArchitecture.Application.Features.LeaveRequests.Handlers.Commands
 {
@@ -13,15 +15,18 @@ namespace CleanArchitecture.Application.Features.LeaveRequests.Handlers.Commands
         private readonly ILeaveRequestRepository _leaveRequestRepository;
         private readonly ILeaveTypeRepository _leaveTypeRepository;
         private readonly IMapper _mapper;
+        private readonly IEmailSender _emailSender;
 
         public CreateLeaveRequestCommandHandler(
             ILeaveRequestRepository leaveRequestRepository,
             ILeaveTypeRepository leaveTypeRepository,
-            IMapper mapper)
+            IMapper mapper,
+            IEmailSender emailSender)
         {
             _leaveTypeRepository = leaveTypeRepository;
             _leaveRequestRepository = leaveRequestRepository;
             _mapper = mapper;
+            _emailSender = emailSender;
         }
 
         public async Task<BaseCommandResponse> Handle(CreateLeaveRequestCommand request, CancellationToken cancellationToken)
@@ -44,6 +49,21 @@ namespace CleanArchitecture.Application.Features.LeaveRequests.Handlers.Commands
             response.Success = true;
             response.Message = "Creation Successful";
             response.Id = leaveRequest.Id;
+
+            try
+            {
+                var email = new Email
+                {
+                    To = "admin@localhost",
+                    Body = $"A new leave request has been submitted.",
+                    Subject = "New Leave Request"
+                };
+                await _emailSender.SendEmailAsync(email);
+            }
+            catch (Exception ex)
+            {
+                // log or manage the exception
+            }
             return response;
         }
     }

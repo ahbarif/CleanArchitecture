@@ -1,6 +1,6 @@
 ﻿using CleanArchitecture.Domain.Entities;
 
-namespace CleanArchitecture.Application.Persistence.Contracts
+namespace CleanArchitecture.Application.Contracts.Persistence
 {
     public interface ILeaveRequestRepository : IGenericRepository<LeaveRequest>
     {

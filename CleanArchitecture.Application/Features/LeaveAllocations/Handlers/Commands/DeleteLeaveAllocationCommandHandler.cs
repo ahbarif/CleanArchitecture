@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using CleanArchitecture.Application.Exceptions;
 using CleanArchitecture.Application.Features.LeaveAllocations.Requests.Commands;
-using CleanArchitecture.Application.Persistence.Contracts;
+using CleanArchitecture.Application.Contracts.Persistence;
 using CleanArchitecture.Domain.Entities;
 using MediatR;
 
